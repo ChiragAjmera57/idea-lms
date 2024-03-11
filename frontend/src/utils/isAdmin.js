@@ -1,7 +1,7 @@
 export function isAdmin() {
     localStorage.getItem("token")
     return new Promise((resolve, reject) => {
-      fetch('http://localhost:8080/isAdmin',
+      fetch('https://idea-lms.onrender.com/isAdmin',
       {
         method:'GET',
         headers:{

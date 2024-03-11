@@ -121,6 +121,18 @@ const Login = () => {
     })
     
   };
+  const setDefaultAdminCred = ()=>{
+    setAdminCredentials({
+      email:"chirag@gmail.com",
+      password:"9571289935c"
+    })
+  }
+  const setDefaultStudentCred = ()=>{
+    setStudentCredentials({
+      email:"chiragajmera57@gmail.com",
+      password:"9571289935c"
+    })
+  }
   const courseAdded = () => {
     handleClose();
     navigate("/student");
@@ -173,6 +185,15 @@ const Login = () => {
             >
               Login
             </Button>
+            <Button 
+              style={{marginTop:"5px"}}
+              fullWidth
+              variant="contained"
+              color="primary"
+              onClick={setDefaultAdminCred}
+            >
+              Sample credentials
+            </Button>
           </Paper>
         </Grid>
         <Grid item xs={12}>
@@ -223,7 +244,8 @@ const Login = () => {
                 {loading ? <CircularProgress /> : "Signup"}
               </Button>
             ) : (
-              <Button
+              <div>
+                  <Button
                 fullWidth
                 variant="contained"
                 color="primary"
@@ -231,6 +253,17 @@ const Login = () => {
               >
                 Login
               </Button>
+                  <Button
+                  style={{marginTop:"5px"}}
+                fullWidth
+                variant="contained"
+                color="primary"
+                onClick={setDefaultStudentCred}
+              >
+                Sample credentials
+              </Button>
+              </div>
+              
             )}
           </Paper>
           {isStudentSignup ? (

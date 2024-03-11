@@ -1,7 +1,7 @@
 export function getUserDetails(id) {
     localStorage.getItem("token")
     return new Promise((resolve, reject) => {
-      fetch(`http://localhost:8080/userDetails/${id}`,
+      fetch(`https://idea-lms.onrender.com/userDetails/${id}`,
       {
         method:'GET',
         headers:{

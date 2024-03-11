@@ -1,6 +1,6 @@
 const getUserData = () => {
     return new Promise((resolve, reject) => {
-        fetch('http://localhost:8080/student-profile', {
+        fetch('https://idea-lms.onrender.com/student-profile', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

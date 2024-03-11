@@ -1,5 +1,5 @@
 export function addCoursesToStudentByAdmin( courseArray,StudentId) {
-    const url = 'http://localhost:8080/student-add-course-by-admin';
+    const url = 'https://idea-lms.onrender.com/student-add-course-by-admin';
     const headers = {
       'Content-Type': 'application/json',
       'Authorization': localStorage.getItem("token") 

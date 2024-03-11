@@ -1,7 +1,7 @@
 export function getStudentCourses() {
     localStorage.getItem("token")
     return new Promise((resolve, reject) => {
-      fetch('http://localhost:8080/student-link-course',
+      fetch('https://idea-lms.onrender.com/student-link-course',
       {
         method:'GET',
         headers:{

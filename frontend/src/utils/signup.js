@@ -6,7 +6,7 @@ export function studentsignUp(email, name, password) {
     };
 
     return new Promise((resolve, reject) => {
-        fetch('http://localhost:8080/studentsign', requestOptions)
+        fetch('https://idea-lms.onrender.com/studentsign', requestOptions)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');

@@ -1,5 +1,5 @@
 export function addCoursesToStudent( courseArray) {
-    const url = 'http://localhost:8080/student-add-course';
+    const url = 'https://idea-lms.onrender.com/student-add-course';
     const headers = {
       'Content-Type': 'application/json',
       'Authorization': localStorage.getItem("token") 

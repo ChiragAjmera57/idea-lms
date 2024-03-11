@@ -1,6 +1,6 @@
 export const makeAdmin = (userId) => {
     return new Promise((resolve, reject) => {
-      fetch(`http://localhost:8080/users/${userId}/update-admin`, {
+      fetch(`https://idea-lms.onrender.com/users/${userId}/update-admin`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

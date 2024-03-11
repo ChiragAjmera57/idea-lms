@@ -1,6 +1,6 @@
 export function createLecture(name,startTime,endTime,meetLink,courseId) {
     return new Promise((resolve, reject) => {
-      fetch('http://localhost:8080/add-lecture', {
+      fetch('https://idea-lms.onrender.com/add-lecture', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

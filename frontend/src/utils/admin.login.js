@@ -6,7 +6,7 @@ export function adminLogin(email,  password) {
     };
 
     return new Promise((resolve, reject) => {
-        fetch('http://localhost:8080/login', requestOptions)
+        fetch('https://idea-lms.onrender.com/login', requestOptions)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');

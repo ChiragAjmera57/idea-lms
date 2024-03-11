@@ -1,6 +1,6 @@
 export function createCourse(title) {
     return new Promise((resolve, reject) => {
-      fetch('http://localhost:8080/create-course', {
+      fetch('https://idea-lms.onrender.com/create-course', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

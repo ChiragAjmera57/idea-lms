@@ -1,6 +1,6 @@
 export const editLecture = (lectureId, newData) => {
     return new Promise((resolve, reject) => {
-        fetch(`http://localhost:8080/edit-lecture/${lectureId}`, {
+        fetch(`https://idea-lms.onrender.com/edit-lecture/${lectureId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

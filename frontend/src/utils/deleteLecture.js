@@ -1,6 +1,6 @@
 export const deleteLecture = (lectureId) => {
     return new Promise((resolve, reject) => {
-        fetch(`http://localhost:8080/delete-lecture/${lectureId}`, {
+        fetch(`https://idea-lms.onrender.com/delete-lecture/${lectureId}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

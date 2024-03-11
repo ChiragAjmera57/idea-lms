@@ -1,7 +1,7 @@
 export function getNonAdmin() {
     localStorage.getItem("token")
     return new Promise((resolve, reject) => {
-      fetch(`http://localhost:8080/non-admin-users`,
+      fetch(`https://idea-lms.onrender.com/non-admin-users`,
       {
         method:'GET',
         headers:{
