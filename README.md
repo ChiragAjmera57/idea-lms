@@ -1,6 +1,9 @@
 # LMS-Idea-Clan
 
 This project is a LMS. Student and admin course+lecture management with role base servies and authorization.
+## Important Note
+
+Please note that api is deployed on render's free version and might gave response delay please wait for response.
 
 - Two folder one is frontend and one is backend.
 - npm run dev/start to run both.
